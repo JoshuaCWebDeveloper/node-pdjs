@@ -1,9 +1,28 @@
-PDJS (PagerDuty base JavaScript API)
+PDJS (PagerDuty base JavaScript API) for Node
 ====
 
 This is a simple JavaScript wrapper to the [PagerDuty API](http://developer.pagerduty.com/)
 
-Include [jQuery](http://jquery.com/) and [pdjs.js](http://eurica.github.io/pdjs/js/pdjs.js)
+It was forked from https://github.com/eurica/pdjs and modified to also run in Node.js
+
+## Installation
+
+`npm install node-pdjs`
+
+#### In Node.js
+
+`var PDJSobj = require('node-pdjs');`
+
+#### In browser environment
+
+Download [pdjs.js file](https://github.com/JoshuaCWebDeveloper/node-pdjs/blob/master/js/pdjs.js)
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+    <!-- Include pdjs.js file -->
+    <script src="path/to/pdjs.js"></script>
+    
+## Setup
 
     PDJS = new PDJSobj({
       subdomain: "webdemo",
@@ -137,16 +156,11 @@ There's an examples directory:
   * [examples/report.html](http://eurica.github.io/pdjs/examples/report.html) shows off *api_all* by looping through all the events on my webdemo account for the last 30 days and prints them out as a CSV-esque thing that you could paste into a CSV file.
   * [examples/trigger.html](http://eurica.github.io/pdjs/examples/trigger.html) shows how to trigger an incident
 
-## To compile the base script:
-This is written in [CoffeeScript](http://coffeescript.org/), so you're going to have to compile it to get JavaScript
-
-coffee --output js/ --compile --watch --join pdjs.js coffee/ &
-
 ## More info
 
-Are you using this?  Let me know: [dave@euri.ca](mailto:dave@euri.ca).  
+This project was forked from https://github.com/eurica/pdjs
 
-You might notice that PDJS sends along some extra parameters, even though this is currently a side project of mine, I work for [PagerDuty](http://www.pagerduty.com) and I want to track QoS across our language-specific libraries.
+It was originally written in CoffeeScript; however, this fork just updates the compiled pdjs.js file.
 
 Coming soon:
 

@@ -155,7 +155,7 @@
         };
       })(this);
       this.logg(params);
-      return $.ajax(params);
+      return ajaxMethod(params);
     };
 
     PDJSobj.prototype.api_all = function(params, datasofar) {
@@ -238,7 +238,7 @@
           return _this.no_success_function(data, params);
         };
       })(this);
-      return $.ajax(params);
+      return ajaxMethod(params);
     };
 
     PDJSobj.prototype.trigger = function(params) {

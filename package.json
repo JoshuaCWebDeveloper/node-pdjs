@@ -1,7 +1,7 @@
 {
   "name": "node-pdjs",
-  "version": "0.1.0",
-  "description": "PDJS (PagerDuty base JavaScript API) for Node",
+  "version": "1.0.0-node.0.1.0",
+  "description": "NodeJS wrapper for the PagerDuty API",
   "dependencies": {
     "najax": "^0.7.1"
   },
@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/JoshuaCWebDeveloper/node-pdjs.git"
   },
+  "keywords": [
+    "PagerDuty"
+  ],
   "author": "Joshua Carter",
   "license": "UNLICENSED"
 }
